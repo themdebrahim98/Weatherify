@@ -26,7 +26,7 @@ const StyledBox = styled("div")(({ theme }) => {
     justifyContent: "center",
     height: "280px",
     padding: "5px",
-    width: "350px",
+    
     padding: "40px",
     borderRadius: "15px",
     //  backgroundImage: `url(${rainImage})`,
@@ -118,7 +118,7 @@ function App() {
 
   return (
     <Container>
-      {console.log(weatherInfo)}
+      
       <Nav />
 
       <Paper
@@ -132,6 +132,7 @@ function App() {
           height: { xs: "100%" },
         }}
       >
+         <Typography variant="h3"  borderBottom={1} gutterBottom={5}>Check Weather </Typography>
         <Stack
           direction="row"
           spacing={0}
@@ -142,6 +143,7 @@ function App() {
             marginBottom: "50px",
           }}
         >
+         
           <Box
             sx={{
               width: "350px",
@@ -178,7 +180,7 @@ function App() {
         {console.log(city)}
         {Object.keys(weatherInfo).length > 0 && (
           <Stack>
-            <StyledBox elevation={4} style={{}} id="styleBox">
+            <StyledBox sx={{width: {xs:'292px', sm:'350px'}}} elevation={4} style={{}} id="styleBox">
               <Stack spacing={2} direction="column" color="">
                 <Typography variant="h5" sx={{ fontWeight: "700" }}>
                   {weatherInfo[0].state}
