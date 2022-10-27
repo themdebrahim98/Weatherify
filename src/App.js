@@ -56,7 +56,7 @@ function App() {
     if (e.keyCode === 13 || e.target.id == "searchButton") {
       e.preventDefault();
       let response1 = await axios(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=9b52a325f3d891ddfd5c0ceafa5dfa1f`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=9b52a325f3d891ddfd5c0ceafa5dfa1f`
       );
       console.log(response1);
       if (response1.data.length > 0) {
