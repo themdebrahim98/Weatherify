@@ -13,13 +13,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 const navLinks = [
-  "http://localhost:3000/",
+  "/",
   "https://mdebraim98.netlify.app/",
-  "http://localhost:3000/contact",
+  "/contact",
 ];
 
 function DrawerAppBar(props) {
@@ -37,9 +38,9 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems.map((item,idx) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton href={navLinks[idx]} sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -72,11 +73,22 @@ function DrawerAppBar(props) {
             Weather Check
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item,idx) => (
-              <Button key={item} href={navLinks[idx]} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
+            {navItems.map((item,idx)=>(
+                
+                 item==='About'?<Button variant="string" href="https://mdebraim98.netlify.app/">About</Button> : <Button href={navLinks[idx]} variant="string">{item}</Button>
+                
+
+            ))
+
+
+            }
+
+             
+           
+               
+              
+            
+
           </Box>
         </Toolbar>
       </AppBar>

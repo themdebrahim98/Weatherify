@@ -24,7 +24,7 @@ const StyledBox = styled("div")(({ theme }) => {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    height: "250px",
+    height: "280px",
     padding: "5px",
     width: "350px",
     padding: "40px",
@@ -75,7 +75,7 @@ function App() {
             state: response1.data[0].state,
             description: fetchData.weather[0].description,
             temp_min: fetchData.main.temp_min,
-            tem_max: fetchData.main.temp_max,
+            temp_max: fetchData.main.temp_max,
             country: fetchData.sys.country,
           },
           {
@@ -124,11 +124,12 @@ function App() {
       <Paper
         elevation={5}
         sx={{
+          background: 'linear-gradient(145deg, #1565c0, transparent)',
           margin: "auto",
           marginTop: "100px",
           textAlign: "center",
           padding: "45px",
-          height: { xs: "auto" },
+          height: { xs: "100%" },
         }}
       >
         <Stack
@@ -192,6 +193,16 @@ function App() {
                 <Typography variant="h5" sx={{ fontWeight: "500" }}>
                   {weatherInfo[0].description}
                 </Typography>
+                <Stack direction='row' spacing={5}>
+                <Typography variant="body1" sx={{ fontWeight: "500" }}>
+                 H:{weatherInfo[0].temp_max}
+                </Typography>
+                <Typography variant="body1" sx={{ fontWeight: "500" }}>
+                  L: {weatherInfo[0].temp_min}
+                </Typography>
+
+                </Stack>
+                
               </Stack>
             </StyledBox>
 
