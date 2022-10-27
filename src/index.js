@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Routes,Route,BrowserRouter,Link} from 'react-router-dom'
+import Contact from '../src/components/Contact'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+      <Route path='/' element={<App/>}></Route>
+        <Route path='/home' element={<App/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
+
+      </Routes>
+    </BrowserRouter>
+
+  
   </React.StrictMode>
 );
 
