@@ -19,7 +19,7 @@ const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 const navLinks = [
   "/",
-  "https://mdebraim98.netlify.app/",
+  "https://github.com/mdebrahim98",
   "/contact",
 ];
 
@@ -70,12 +70,12 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Weather Check
+            Weatherify
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item,idx)=>(
                 
-                 item==='About'?<Button variant="string" href="https://mdebraim98.netlify.app/">About</Button> : <Button href={navLinks[idx]} variant="string">{item}</Button>
+                 item==='About'?<Button variant="string" href="https://github.com/mdebrahim98">About</Button> : <Button href={navLinks[idx]} variant="string">{item}</Button>
                 
 
             ))
