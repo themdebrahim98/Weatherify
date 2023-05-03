@@ -132,7 +132,7 @@ function App() {
           height: { xs: "100%" },
         }}
       >
-         <Typography variant="h3"  borderBottom={1} gutterBottom={5}>Check Weather </Typography>
+         <Typography variant="h3"  borderBottom={1} gutterBottom={5}>Weatherify</Typography>
         <Stack
           direction="row"
           spacing={0}
