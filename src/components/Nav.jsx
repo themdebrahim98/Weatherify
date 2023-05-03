@@ -20,7 +20,7 @@ const navItems = ["Home", "About", "Contact"];
 const navLinks = [
   "/",
   "https://github.com/mdebrahim98",
-  "/contact",
+  "https://github.com/mdebrahim98",
 ];
 
 function DrawerAppBar(props) {
