@@ -1,30 +1,30 @@
 <h3 align="center">
     <a href="#">
-        <img height="100" src="https://raw.githubusercontent.com/mdebrahim98/WeShare/master/logo (1).png" alt="logo" title="WeShare">
+        <img height="100" src="https://raw.githubusercontent.com/mdebrahim98/Weatherify/master/logo.png" alt="logo" title="Weatherify">
     </a>
 </h1>
 <h3 align="center">
-WeShare
+Weatherify
 </h3>
 <p align="center">
-Send and Receive files directly from your browser
+View weather conditions for any city just by typing its name
 </p>
 <br>
 
-[![Contributors](https://img.shields.io/github/contributors/mdebrahim98/WeShare.svg)](https://github.com/mdebrahim98/WeShare/graphs/contributors)
-[![License](https://img.shields.io/github/license/mdebrahim98/WeShare.svg)](https://github.com/mdebrahim98/WeShare/blob/master/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/mdebrahim98/Weatherify.svg)](https://github.com/mdebrahim98/Weatherify/graphs/contributors)
+[![License](https://img.shields.io/github/license/mdebrahim98/Weatherify.svg)](https://github.com/mdebrahim98/Weatherify/blob/master/LICENSE)
 
-# What is WeShare?
+# What is Weatherify?
 
-WeShare helps you to send or receive text or file from one device to another one through browser, it doesn't require any login or registration.
+Weatherify helps you to view weather conditions for any city just by typing its name, it doesn't require any login or registration.
 
 ## How to use?
 
-If you want to send something to someone, visit the [app](https://weshare-qc5z.onrender.com/) and also let recipient open the same link, select the files or enter text you want to send and enter the `Recipient ID` shown on the top of centered control panel of recipient device, then hit `Send` button to send to your recipient device.
+Just open the app and type the city name and hit enter, it will fetch the required weather data and it will show these in data card.
 
 ## Feedback
 
-Give me your valuable feedback or opinion by creating Github [issue](https://github.com/mdebrahim98/WeShare/issues/new).
+Give me your valuable feedback or opinion by creating Github [issue](https://github.com/mdebrahim98/Weatherify/issues/new).
 
 ## Contributing
 
